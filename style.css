@@ -125,6 +125,7 @@ img {
         display: block;
     }
 }
+
 .mp4 {
     height: 100vh;
     position: relative;
@@ -209,8 +210,9 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    width: 70%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .titulo-secao {
@@ -238,6 +240,7 @@ img {
     font-size: 1.1rem;
     margin-bottom: 3rem;
 }
+
 .secao-musica {
     padding: 5rem 2rem;
     text-align: center;
@@ -258,7 +261,6 @@ img {
     text-align: center;
 }
 
-/* BIO */
 .secao-biografia {
     background: rgba(21,26,42,0.3);
 }
@@ -410,4 +412,10 @@ img {
 .revelar-scroll.visivel {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
