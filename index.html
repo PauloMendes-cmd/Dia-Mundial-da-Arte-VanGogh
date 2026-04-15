@@ -1,9 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title>Dia Mundial da Arte - Van Gogh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Mundial da Arte | Vincent van Gogh - UCB</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +23,7 @@
             <a href="#sobre">Sobre</a>
             <a href="#vangogh">Van Gogh</a>
             <a href="#obras">Obras</a>
-            <a href="#tecnicas">Técnicas</a>
             <a href="#linha-do-tempo">Linha do Tempo</a>
-            <a href="#atividades">Atividades</a>
-            <a href="#galeria">Galeria</a>
         </nav>
         <button class="botao-menu-mobile" onclick="toggleMenuMobile()">☰</button>
     </div>
@@ -36,7 +38,7 @@
         <div class="mp4-text">
             <h1 class="mp4-title">Celebre o Dia Mundial da Arte</h1>
             <p class="mp4-subtitle">Uma jornada inspiradora pela vida e obras revolucionárias de Vincent van Gogh</p>
-            <a href="#atividades" class="btn-primary">Explorar Atividades</a>
+            <a href="#obras" class="btn-primary">Explorar obras</a>
         </div>
     </div>
 </section>
@@ -126,7 +128,7 @@
                             <div class="slide"><div class="card"><h4>1853</h4><p>Nascimento</p></div></div>
                             <div class="slide"><div class="card"><h4>1880</h4><p>Começa a pintar</p></div></div>
                             <div class="slide"><div class="card"><h4>1889</h4><p>Noite Estrelada</p></div></div>
-                    
+
                             <div class="slide"><div class="card"><h4>1853</h4><p>Nascimento</p></div></div>
                             <div class="slide"><div class="card"><h4>1880</h4><p>Começa a pintar</p></div></div>
                             <div class="slide"><div class="card"><h4>1889</h4><p>Noite Estrelada</p></div></div>
@@ -176,7 +178,7 @@ const observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll('.revelar-scroll').forEach(el => {
     observer.observe(el);
 });
-    
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
